@@ -1,0 +1,159 @@
+/* Importar una fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilo básico para el cuerpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo del contenedor del menú */
+#menu {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    width: 90%;
+    padding: 40px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Estilo del título principal */
+h1 {
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+/* Estilo del contenedor de botones */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo de cada botón del menú */
+.menu-button {
+    display: block;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.menu-button:active {
+    background-color: #004494;
+    transform: translateY(1px);
+}
+
+/* Contenido dentro del botón */
+.button-content {
+    text-align: left;
+}
+
+.menu-button h2 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.menu-button p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: #e1e1e1;
+}
+
+/* Estilo del contenido de las listas */
+#content {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    width: 90%;
+    padding: 40px;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Estilo de las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Estilo del texto de ejemplo */
+.example-output {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Estilo del botón de volver al menú */
+.back-button {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.back-button a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #28a745;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-button a:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.back-button a:active {
+    background-color: #1e7e34;
+    transform: translateY(1px);
+}
+
+/* Diseño responsivo */
+@media (max-width: 600px) {
+    #menu, #content {
+        padding: 20px;
+    }
+
+    .menu-button {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .menu-button h2 {
+        font-size: 1.4rem;
+    }
+
+    .menu-button p {
+        font-size: 0.9rem;
+    }
+}
